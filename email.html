@@ -21,7 +21,7 @@
           line-height: 42px !important;
         }
         .email-slogan {
-          font-size: 15px !important;
+          font-size: 15px !important;``
           line-height: 15px !important;
         }
       }
@@ -35,6 +35,27 @@
         }
       }
     </style>
+    <!--[if gte mso 12]>
+      <style>
+        td {
+          mso-line-height-rule: exactly;
+        }
+        .email-title {
+          padding-bottom: 0 !important;
+        }
+        .email-tickets {
+          line-height: 32px !important;
+        }
+      </style>
+    <![endif]-->
+    <!--[if gte mso 12 && lt mso 15 ]>
+      <style>
+        .email-slogan {
+          font-size: 24px !important;
+          line-height: 24px !important;
+        }
+      </style>
+    <![endif]-->
   </head>
   <body style="margin: 0; padding:0;">
     <table style="
@@ -105,7 +126,10 @@
                 <table bgcolor="#5b3885"
                        width="290">
                   <tr>
-                    <td>
+                    <td style="
+                      font-size: 18px;
+                      line-height: 18px;
+                    ">
                       <img src="http://via.placeholder.com/290x15" 
                            alt="ornamentation"
                            height="15"
@@ -147,7 +171,10 @@
                 <table bgcolor="#0089b4"
                        width="290">
                   <tr>
-                    <td>
+                    <td style="
+                      font-size: 18px;
+                      line-height: 18px;
+                    ">
                       <img src="http://via.placeholder.com/290x15" 
                            alt="ornamentation"
                            height="15"
@@ -174,12 +201,21 @@
                     <td>
                       <table align="center" width="236">
                         <tr>
-                          <td height="4">
-                            
+                          <td height="4"
+                              style="
+                                font-size: 4px;
+                                line-height: 4px;
+                              ">
+                            &nbsp;
                           </td>
                         </tr>
                         <tr>
-                          <td bgcolor="#fcfbfd" height="3">
+                          <td bgcolor="#fcfbfd" height="3"
+                              style="
+                                font-size: 3px;
+                                line-height: 3px;
+                              ">
+                              &nbsp;
                           </td>
                         </tr>
                         <tr>
@@ -189,7 +225,7 @@
                             font-weight: bold;
                             line-height: 14px;
                             padding-top: 5px;
-                          ">
+                          " class="email-tickets">
                             <span style="
                               font-family: 'Arial Black', 'GillSans-Bold';
                               font-size: 28px;
@@ -200,7 +236,7 @@
                               font-family: 'Arial Black', 'GillSans-Bold';
                               font-size: 32px;
                               line-height: 32px;
-                            ">15</span>
+                            " class="email-tickets">15</span>
                             pesos
                           </td>
                         </tr>
